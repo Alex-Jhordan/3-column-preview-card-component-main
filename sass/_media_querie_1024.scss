@@ -1,0 +1,44 @@
+@media (min-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+    }
+
+    .card {
+
+        &--sedans {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 0.5rem;
+        }
+    
+        &--suvs {
+            background-color: $background-color-2;
+        }
+    
+        &--luxury {
+            border-top-right-radius: 0.5rem;
+            border-bottom-left-radius: 0rem;
+        }
+
+        &__texts {
+            padding-top: 0;
+            gap: 1.8rem;
+        }
+
+        &__link {
+            margin-top: 3rem;
+            transition: all 500ms;
+
+            &:hover {
+                background-color: transparent;
+                color: $headings-buttons-background-color;
+            }
+        }
+    }
+
+    .attribution {
+        margin-bottom: 0;
+        position: fixed;
+        bottom: 20px;
+    }
+}

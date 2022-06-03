@@ -1,0 +1,175 @@
+/*Layout*/
+/*The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px*/
+/*Font*/
+/*Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400*/
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/*Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700*/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+/*Colors*/
+/*Background colors*/
+/*Text colors*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards {
+  width: 90%;
+  max-width: 960px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 4rem 0;
+}
+
+.cards__title {
+  position: fixed;
+  top: -100%;
+}
+
+.card {
+  padding: 3rem 3rem 3.3rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2rem;
+}
+
+.card__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.2rem;
+  padding-top: 0.7rem;
+}
+
+.card__heading {
+  font-family: 'Big Shoulders Display', cursive;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.card__paragraph {
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6rem;
+}
+
+.card__link {
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  border: 2px solid #f2f2f2;
+}
+
+.card__link--sedans {
+  color: #e38826;
+}
+
+.card__link--suvs {
+  color: #006970;
+}
+
+.card__link--luxury {
+  color: #004241;
+}
+
+.card--sedans {
+  background-color: #e38826;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.card--suvs {
+  background-color: #006970;
+}
+
+.card--luxury {
+  background-color: #004241;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+  .card--sedans {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .card--suvs {
+    background-color: #006970;
+  }
+  .card--luxury {
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0rem;
+  }
+  .card__texts {
+    padding-top: 0;
+    gap: 1.8rem;
+  }
+  .card__link {
+    margin-top: 3rem;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+  .card__link:hover {
+    background-color: transparent;
+    color: #f2f2f2;
+  }
+  .attribution {
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 20px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

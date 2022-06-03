@@ -1,0 +1,28 @@
+/*Layout*/
+/*The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px*/
+
+
+/*Font*/
+/*Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+//font-family: 'Lexend Deca', sans-serif;
+
+/*Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+//font-family: 'Big Shoulders Display', cursive;
+
+
+/*Colors*/
+/*Background colors*/
+$background-color-1: hsl(31, 77%, 52%); //Bright orange
+$background-color-2: hsl(184, 100%, 22%); //Dark cyan
+$background-color-3: hsl(179, 100%, 13%); //Very dark cyan
+
+/*Text colors*/
+$paragraphs-color: hsla(0, 0%, 100%, 0.75); //Transparent white
+$headings-buttons-background-color: hsl(0, 0%, 95%); //Very light gray
